@@ -56,8 +56,8 @@ const Menu = ({numberOfItemsToShow}) => {
             <span className="loading loading-infinity loading-lg"></span>
           ) : (
             <>
-              <div className="font-semibold btn btn-warning btn-outline">
-                <li><Link onClick={() => handleCategorySelect('All')}>All</Link></li>
+              <div className="font-semibold">
+                <li className=''><Link className='btn btn-sm btn-warning btn-outline' onClick={() => handleCategorySelect('All')}>All</Link></li>
               </div>
               {categories.map(category => (
                 <MenuCategories
