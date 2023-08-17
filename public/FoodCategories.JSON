@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "category": "Burger"
+    },
+    {
+        "id": 2,
+        "category": "Pizza"
+    },
+    {
+        "id": 3,
+        "category": "Pasta"
+    }
+]
