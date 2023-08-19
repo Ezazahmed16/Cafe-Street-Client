@@ -10,30 +10,22 @@ const Menu = ({ numberOfItemsToShow }) => {
   const [loading, setLoading] = useState(true);
   const [filtering, setFiltering] = useState(false);
   const [categories, setCategories] = useState([]);
-  const [paginationLoading, setPaginationLoading] = useState(false); // Add paginationLoading state
-
+  const [paginationLoading, setPaginationLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
-    fetch('FoodMenu.JSON')
-      .then(response => response.json())
-      .then(data => {
-        setMenuData(data);
+    Promise.all([
+      fetch('FoodMenu.JSON').then(response => response.json()),
+      fetch('FoodCategories.JSON').then(response => response.json())
+    ])
+      .then(([menuData, categoriesData]) => {
+        setMenuData(menuData);
+        setCategories(categoriesData);
         setLoading(false);
       })
       .catch(error => {
-        console.error('Error fetching menu data:', error);
+        console.error('Error fetching data:', error);
         setLoading(false);
-      });
-
-    // Fetch category data when the component mounts
-    fetch('FoodCategories.JSON')
-      .then(response => response.json())
-      .then(data => {
-        setCategories(data);
-      })
-      .catch(error => {
-        console.error('Error fetching categories data:', error);
       });
   }, []);
 
@@ -49,21 +41,19 @@ const Menu = ({ numberOfItemsToShow }) => {
     ? menuData
     : menuData.filter(item => item.category_id === selectedCategory);
 
-  // pagination
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = menuData.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = filteredMenuData.slice(indexOfFirstItem, indexOfLastItem);
 
-  const totalPages = Math.ceil(menuData.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredMenuData.length / itemsPerPage);
 
-  const handlePageChange =async (pageNumber) => {
-    setPaginationLoading(true); // Set pagination loading to true
-    await setCurrentPage(pageNumber);
-    setPaginationLoading(false); // Set pagination loading to false after updating page
-
+  const handlePageChange = (pageNumber) => {
+    setPaginationLoading(true);
+    setCurrentPage(pageNumber);
+    setPaginationLoading(false);
   };
 
   return (
@@ -77,9 +67,8 @@ const Menu = ({ numberOfItemsToShow }) => {
           ) : (
             <>
               <div className="font-semibold">
-                <li className=''><Link className='btn btn-sm btn-warning btn-outline' onClick={() => handleCategorySelect('All')}>All</Link></li>
+                <li><Link className='btn btn-sm btn-warning btn-outline' onClick={() => handleCategorySelect('All')}>All</Link></li>
               </div>
-              {/* Menu Category */}
               {categories.map(category => (
                 <MenuCategories
                   key={category.id}
@@ -97,7 +86,6 @@ const Menu = ({ numberOfItemsToShow }) => {
           <span className="loading loading-ball loading-lg"></span>
         </div>
       ) : (
-        // Menu Items
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {currentItems.map(menuItem => (
             <MenuItems
@@ -108,8 +96,6 @@ const Menu = ({ numberOfItemsToShow }) => {
         </div>
       )}
 
-
-      {/* Pagination */}
       <div className="flex justify-center mt-4">
         <Pagination
           currentPage={currentPage}
