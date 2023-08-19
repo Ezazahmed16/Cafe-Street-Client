@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ShoppingCartIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
-const MenuItems = ({ menuItem }) => {
+const MenuItems = ({ menuItem, currentPage, itemsPerPage }) => {
     const { name, image, price, description } = menuItem;
 
     return (
-        <div className="max-w-xs rounded-md shadow-md bg-base-content text-gray-100 m-auto">
-            <img src={image} alt={name} className="object-cover object-center w-full rounded-t-md h-52 bg-gray-500" />
+        <div className="max-w-xs rounded-md shadow-md bg-base-content text-gray-100 m-auto ">
+
+            <div className="w-full h-52 overflow-hidden">
+                <LazyLoadImage
+                    alt={name}
+                    effect="blur"
+                    src={image}
+                    className="object-cover object-center w-full h-full rounded-t-md bg-gray-500 border rounded-r-lg m-auto"
+                />
+            </div>
 
             <div className="flex flex-col justify-between p-6 space-y-8">
                 <div className="space-y-2">
@@ -23,6 +33,7 @@ const MenuItems = ({ menuItem }) => {
                     </Link>
                 </div>
             </div>
+
         </div>
     );
 }

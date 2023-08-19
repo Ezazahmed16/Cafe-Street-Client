@@ -17,7 +17,391 @@
     },
     {
         "id": 3,
-        "image": "https://img.freepik.com/free-photo/side-view-pasta-with-sauce-parmesan-mushrooms-lettuce_176474-2504.jpg?w=740&t=st=1692291850~exp=1692292450~hmac=c11005754a0d456573549cb86b2fe395c2701c8d9ce40e5ac65343ca35f92aaa",
+        "image": "https://img.freepik.com/free-photo/frittata-with-mushrooms-zucchini-cheese_2829-8295.jpg?w=740&t=st=1692463181~exp=1692463781~hmac=b00438a9d23133b55ec7c1f11f083f5dcb8a3e43029b498da0aa31a24e7b27c9",
+        "name": "Chicken Alfredo",
+        "description": "Creamy pasta dish with grilled chicken, fettuccine, and rich Alfredo sauce.",
+        "price": "$14.75",
+        "category_id": 3
+    },
+    {
+        "id": 4,
+        "image": "https://img.freepik.com/free-photo/grilled-beef-burger-with-fresh-vegetable-salad-generated-by-ai_24640-81547.jpg",
+        "name": "Veggie Burger",
+        "description": "A delicious vegetarian burger with assorted veggies and special sauce.",
+        "price": "$8.99",
+        "category_id": 1
+    },
+    {
+        "id": 5,
+        "image": "https://img.freepik.com/free-photo/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware_176474-3185.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Pepperoni Pizza",
+        "description": "Classic pizza topped with pepperoni, mozzarella, and tomato sauce.",
+        "price": "$13.50",
+        "category_id": 2
+    },
+    {
+        "id": 6,
+        "image": "https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Spaghetti Bolognese",
+        "description": "Traditional Italian pasta with a hearty meat sauce and grated Parmesan.",
+        "price": "$11.95",
+        "category_id": 3
+    },
+    {
+        "id": 1,
+        "image": "https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=740&t=st=1692291769~exp=1692292369~hmac=6aaa1a6be035ac388678dbed53361805ef84c3af3ffcfef2f6e429211a8eb0d3",
+        "name": "Deluxe Burger",
+        "description": "A juicy beef burger with cheddar cheese, lettuce, tomato, and special sauce.",
+        "price": "$9.99",
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=740&t=st=1692291819~exp=1692292419~hmac=237ff573bf179afbac8312f364a39ee4c8f8e53e815313b301e9b5233d8a9971",
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with fresh mozzarella, tomatoes, basil, and olive oil.",
+        "price": "$12.50",
+        "category_id": 2
+    },
+    {
+        "id": 3,
+        "image": "https://img.freepik.com/free-photo/frittata-with-mushrooms-zucchini-cheese_2829-8295.jpg?w=740&t=st=1692463181~exp=1692463781~hmac=b00438a9d23133b55ec7c1f11f083f5dcb8a3e43029b498da0aa31a24e7b27c9",
+        "name": "Chicken Alfredo",
+        "description": "Creamy pasta dish with grilled chicken, fettuccine, and rich Alfredo sauce.",
+        "price": "$14.75",
+        "category_id": 3
+    },
+    {
+        "id": 4,
+        "image": "https://img.freepik.com/free-photo/grilled-beef-burger-with-fresh-vegetable-salad-generated-by-ai_24640-81547.jpg",
+        "name": "Veggie Burger",
+        "description": "A delicious vegetarian burger with assorted veggies and special sauce.",
+        "price": "$8.99",
+        "category_id": 1
+    },
+    {
+        "id": 5,
+        "image": "https://img.freepik.com/free-photo/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware_176474-3185.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Pepperoni Pizza",
+        "description": "Classic pizza topped with pepperoni, mozzarella, and tomato sauce.",
+        "price": "$13.50",
+        "category_id": 2
+    },
+    {
+        "id": 6,
+        "image": "https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Spaghetti Bolognese",
+        "description": "Traditional Italian pasta with a hearty meat sauce and grated Parmesan.",
+        "price": "$11.95",
+        "category_id": 3
+    },
+    {
+        "id": 1,
+        "image": "https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=740&t=st=1692291769~exp=1692292369~hmac=6aaa1a6be035ac388678dbed53361805ef84c3af3ffcfef2f6e429211a8eb0d3",
+        "name": "Deluxe Burger",
+        "description": "A juicy beef burger with cheddar cheese, lettuce, tomato, and special sauce.",
+        "price": "$9.99",
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=740&t=st=1692291819~exp=1692292419~hmac=237ff573bf179afbac8312f364a39ee4c8f8e53e815313b301e9b5233d8a9971",
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with fresh mozzarella, tomatoes, basil, and olive oil.",
+        "price": "$12.50",
+        "category_id": 2
+    },
+    {
+        "id": 3,
+        "image": "https://img.freepik.com/free-photo/frittata-with-mushrooms-zucchini-cheese_2829-8295.jpg?w=740&t=st=1692463181~exp=1692463781~hmac=b00438a9d23133b55ec7c1f11f083f5dcb8a3e43029b498da0aa31a24e7b27c9",
+        "name": "Chicken Alfredo",
+        "description": "Creamy pasta dish with grilled chicken, fettuccine, and rich Alfredo sauce.",
+        "price": "$14.75",
+        "category_id": 3
+    },
+    {
+        "id": 4,
+        "image": "https://img.freepik.com/free-photo/grilled-beef-burger-with-fresh-vegetable-salad-generated-by-ai_24640-81547.jpg",
+        "name": "Veggie Burger",
+        "description": "A delicious vegetarian burger with assorted veggies and special sauce.",
+        "price": "$8.99",
+        "category_id": 1
+    },
+    {
+        "id": 5,
+        "image": "https://img.freepik.com/free-photo/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware_176474-3185.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Pepperoni Pizza",
+        "description": "Classic pizza topped with pepperoni, mozzarella, and tomato sauce.",
+        "price": "$13.50",
+        "category_id": 2
+    },
+    {
+        "id": 6,
+        "image": "https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Spaghetti Bolognese",
+        "description": "Traditional Italian pasta with a hearty meat sauce and grated Parmesan.",
+        "price": "$11.95",
+        "category_id": 3
+    },
+    {
+        "id": 1,
+        "image": "https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=740&t=st=1692291769~exp=1692292369~hmac=6aaa1a6be035ac388678dbed53361805ef84c3af3ffcfef2f6e429211a8eb0d3",
+        "name": "Deluxe Burger",
+        "description": "A juicy beef burger with cheddar cheese, lettuce, tomato, and special sauce.",
+        "price": "$9.99",
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=740&t=st=1692291819~exp=1692292419~hmac=237ff573bf179afbac8312f364a39ee4c8f8e53e815313b301e9b5233d8a9971",
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with fresh mozzarella, tomatoes, basil, and olive oil.",
+        "price": "$12.50",
+        "category_id": 2
+    },
+    {
+        "id": 3,
+        "image": "https://img.freepik.com/free-photo/frittata-with-mushrooms-zucchini-cheese_2829-8295.jpg?w=740&t=st=1692463181~exp=1692463781~hmac=b00438a9d23133b55ec7c1f11f083f5dcb8a3e43029b498da0aa31a24e7b27c9",
+        "name": "Chicken Alfredo",
+        "description": "Creamy pasta dish with grilled chicken, fettuccine, and rich Alfredo sauce.",
+        "price": "$14.75",
+        "category_id": 3
+    },
+    {
+        "id": 4,
+        "image": "https://img.freepik.com/free-photo/grilled-beef-burger-with-fresh-vegetable-salad-generated-by-ai_24640-81547.jpg",
+        "name": "Veggie Burger",
+        "description": "A delicious vegetarian burger with assorted veggies and special sauce.",
+        "price": "$8.99",
+        "category_id": 1
+    },
+    {
+        "id": 5,
+        "image": "https://img.freepik.com/free-photo/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware_176474-3185.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Pepperoni Pizza",
+        "description": "Classic pizza topped with pepperoni, mozzarella, and tomato sauce.",
+        "price": "$13.50",
+        "category_id": 2
+    },
+    {
+        "id": 6,
+        "image": "https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Spaghetti Bolognese",
+        "description": "Traditional Italian pasta with a hearty meat sauce and grated Parmesan.",
+        "price": "$11.95",
+        "category_id": 3
+    },
+    {
+        "id": 1,
+        "image": "https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=740&t=st=1692291769~exp=1692292369~hmac=6aaa1a6be035ac388678dbed53361805ef84c3af3ffcfef2f6e429211a8eb0d3",
+        "name": "Deluxe Burger",
+        "description": "A juicy beef burger with cheddar cheese, lettuce, tomato, and special sauce.",
+        "price": "$9.99",
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=740&t=st=1692291819~exp=1692292419~hmac=237ff573bf179afbac8312f364a39ee4c8f8e53e815313b301e9b5233d8a9971",
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with fresh mozzarella, tomatoes, basil, and olive oil.",
+        "price": "$12.50",
+        "category_id": 2
+    },
+    {
+        "id": 3,
+        "image": "https://img.freepik.com/free-photo/frittata-with-mushrooms-zucchini-cheese_2829-8295.jpg?w=740&t=st=1692463181~exp=1692463781~hmac=b00438a9d23133b55ec7c1f11f083f5dcb8a3e43029b498da0aa31a24e7b27c9",
+        "name": "Chicken Alfredo",
+        "description": "Creamy pasta dish with grilled chicken, fettuccine, and rich Alfredo sauce.",
+        "price": "$14.75",
+        "category_id": 3
+    },
+    {
+        "id": 4,
+        "image": "https://img.freepik.com/free-photo/grilled-beef-burger-with-fresh-vegetable-salad-generated-by-ai_24640-81547.jpg",
+        "name": "Veggie Burger",
+        "description": "A delicious vegetarian burger with assorted veggies and special sauce.",
+        "price": "$8.99",
+        "category_id": 1
+    },
+    {
+        "id": 5,
+        "image": "https://img.freepik.com/free-photo/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware_176474-3185.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Pepperoni Pizza",
+        "description": "Classic pizza topped with pepperoni, mozzarella, and tomato sauce.",
+        "price": "$13.50",
+        "category_id": 2
+    },
+    {
+        "id": 6,
+        "image": "https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Spaghetti Bolognese",
+        "description": "Traditional Italian pasta with a hearty meat sauce and grated Parmesan.",
+        "price": "$11.95",
+        "category_id": 3
+    },
+    {
+        "id": 1,
+        "image": "https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=740&t=st=1692291769~exp=1692292369~hmac=6aaa1a6be035ac388678dbed53361805ef84c3af3ffcfef2f6e429211a8eb0d3",
+        "name": "Deluxe Burger",
+        "description": "A juicy beef burger with cheddar cheese, lettuce, tomato, and special sauce.",
+        "price": "$9.99",
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=740&t=st=1692291819~exp=1692292419~hmac=237ff573bf179afbac8312f364a39ee4c8f8e53e815313b301e9b5233d8a9971",
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with fresh mozzarella, tomatoes, basil, and olive oil.",
+        "price": "$12.50",
+        "category_id": 2
+    },
+    {
+        "id": 3,
+        "image": "https://img.freepik.com/free-photo/frittata-with-mushrooms-zucchini-cheese_2829-8295.jpg?w=740&t=st=1692463181~exp=1692463781~hmac=b00438a9d23133b55ec7c1f11f083f5dcb8a3e43029b498da0aa31a24e7b27c9",
+        "name": "Chicken Alfredo",
+        "description": "Creamy pasta dish with grilled chicken, fettuccine, and rich Alfredo sauce.",
+        "price": "$14.75",
+        "category_id": 3
+    },
+    {
+        "id": 4,
+        "image": "https://img.freepik.com/free-photo/grilled-beef-burger-with-fresh-vegetable-salad-generated-by-ai_24640-81547.jpg",
+        "name": "Veggie Burger",
+        "description": "A delicious vegetarian burger with assorted veggies and special sauce.",
+        "price": "$8.99",
+        "category_id": 1
+    },
+    {
+        "id": 5,
+        "image": "https://img.freepik.com/free-photo/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware_176474-3185.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Pepperoni Pizza",
+        "description": "Classic pizza topped with pepperoni, mozzarella, and tomato sauce.",
+        "price": "$13.50",
+        "category_id": 2
+    },
+    {
+        "id": 6,
+        "image": "https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Spaghetti Bolognese",
+        "description": "Traditional Italian pasta with a hearty meat sauce and grated Parmesan.",
+        "price": "$11.95",
+        "category_id": 3
+    },
+    {
+        "id": 1,
+        "image": "https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=740&t=st=1692291769~exp=1692292369~hmac=6aaa1a6be035ac388678dbed53361805ef84c3af3ffcfef2f6e429211a8eb0d3",
+        "name": "Deluxe Burger",
+        "description": "A juicy beef burger with cheddar cheese, lettuce, tomato, and special sauce.",
+        "price": "$9.99",
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=740&t=st=1692291819~exp=1692292419~hmac=237ff573bf179afbac8312f364a39ee4c8f8e53e815313b301e9b5233d8a9971",
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with fresh mozzarella, tomatoes, basil, and olive oil.",
+        "price": "$12.50",
+        "category_id": 2
+    },
+    {
+        "id": 3,
+        "image": "https://img.freepik.com/free-photo/frittata-with-mushrooms-zucchini-cheese_2829-8295.jpg?w=740&t=st=1692463181~exp=1692463781~hmac=b00438a9d23133b55ec7c1f11f083f5dcb8a3e43029b498da0aa31a24e7b27c9",
+        "name": "Chicken Alfredo",
+        "description": "Creamy pasta dish with grilled chicken, fettuccine, and rich Alfredo sauce.",
+        "price": "$14.75",
+        "category_id": 3
+    },
+    {
+        "id": 4,
+        "image": "https://img.freepik.com/free-photo/grilled-beef-burger-with-fresh-vegetable-salad-generated-by-ai_24640-81547.jpg",
+        "name": "Veggie Burger",
+        "description": "A delicious vegetarian burger with assorted veggies and special sauce.",
+        "price": "$8.99",
+        "category_id": 1
+    },
+    {
+        "id": 5,
+        "image": "https://img.freepik.com/free-photo/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware_176474-3185.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Pepperoni Pizza",
+        "description": "Classic pizza topped with pepperoni, mozzarella, and tomato sauce.",
+        "price": "$13.50",
+        "category_id": 2
+    },
+    {
+        "id": 6,
+        "image": "https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Spaghetti Bolognese",
+        "description": "Traditional Italian pasta with a hearty meat sauce and grated Parmesan.",
+        "price": "$11.95",
+        "category_id": 3
+    },
+    {
+        "id": 1,
+        "image": "https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=740&t=st=1692291769~exp=1692292369~hmac=6aaa1a6be035ac388678dbed53361805ef84c3af3ffcfef2f6e429211a8eb0d3",
+        "name": "Deluxe Burger",
+        "description": "A juicy beef burger with cheddar cheese, lettuce, tomato, and special sauce.",
+        "price": "$9.99",
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=740&t=st=1692291819~exp=1692292419~hmac=237ff573bf179afbac8312f364a39ee4c8f8e53e815313b301e9b5233d8a9971",
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with fresh mozzarella, tomatoes, basil, and olive oil.",
+        "price": "$12.50",
+        "category_id": 2
+    },
+    {
+        "id": 3,
+        "image": "https://img.freepik.com/free-photo/frittata-with-mushrooms-zucchini-cheese_2829-8295.jpg?w=740&t=st=1692463181~exp=1692463781~hmac=b00438a9d23133b55ec7c1f11f083f5dcb8a3e43029b498da0aa31a24e7b27c9",
+        "name": "Chicken Alfredo",
+        "description": "Creamy pasta dish with grilled chicken, fettuccine, and rich Alfredo sauce.",
+        "price": "$14.75",
+        "category_id": 3
+    },
+    {
+        "id": 4,
+        "image": "https://img.freepik.com/free-photo/grilled-beef-burger-with-fresh-vegetable-salad-generated-by-ai_24640-81547.jpg",
+        "name": "Veggie Burger",
+        "description": "A delicious vegetarian burger with assorted veggies and special sauce.",
+        "price": "$8.99",
+        "category_id": 1
+    },
+    {
+        "id": 5,
+        "image": "https://img.freepik.com/free-photo/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware_176474-3185.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Pepperoni Pizza",
+        "description": "Classic pizza topped with pepperoni, mozzarella, and tomato sauce.",
+        "price": "$13.50",
+        "category_id": 2
+    },
+    {
+        "id": 6,
+        "image": "https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?size=626&ext=jpg&ga=GA1.2.1319406852.1692291760&semt=ais",
+        "name": "Spaghetti Bolognese",
+        "description": "Traditional Italian pasta with a hearty meat sauce and grated Parmesan.",
+        "price": "$11.95",
+        "category_id": 3
+    },
+    {
+        "id": 1,
+        "image": "https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=740&t=st=1692291769~exp=1692292369~hmac=6aaa1a6be035ac388678dbed53361805ef84c3af3ffcfef2f6e429211a8eb0d3",
+        "name": "Deluxe Burger",
+        "description": "A juicy beef burger with cheddar cheese, lettuce, tomato, and special sauce.",
+        "price": "$9.99",
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=740&t=st=1692291819~exp=1692292419~hmac=237ff573bf179afbac8312f364a39ee4c8f8e53e815313b301e9b5233d8a9971",
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with fresh mozzarella, tomatoes, basil, and olive oil.",
+        "price": "$12.50",
+        "category_id": 2
+    },
+    {
+        "id": 3,
+        "image": "https://img.freepik.com/free-photo/frittata-with-mushrooms-zucchini-cheese_2829-8295.jpg?w=740&t=st=1692463181~exp=1692463781~hmac=b00438a9d23133b55ec7c1f11f083f5dcb8a3e43029b498da0aa31a24e7b27c9",
         "name": "Chicken Alfredo",
         "description": "Creamy pasta dish with grilled chicken, fettuccine, and rich Alfredo sauce.",
         "price": "$14.75",

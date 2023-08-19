@@ -1,11 +1,13 @@
 import React from 'react';
 import bg from '../../../assets/bg.jpg';
 
-
 const Banner = () => {
     return (
         <div className="block">
+
             <div className="hero min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
+
+
                 <div className="hero-overlay bg-opacity-60"></div>
 
                 <div className="hero-content text-neutral-content">
@@ -16,7 +18,8 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-        </div>
+
+        </div >
     );
 }
 

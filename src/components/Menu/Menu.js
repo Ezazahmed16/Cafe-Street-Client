@@ -2,13 +2,16 @@ import React, { useEffect, useState } from 'react';
 import MenuItems from './MenuItems/MenuItems';
 import MenuCategories from './MenuCategories/MenuCategories';
 import { Link } from 'react-router-dom';
+import Pagination from '../shared/Pagination/Pagination';
 
-const Menu = ({numberOfItemsToShow}) => {
+const Menu = ({ numberOfItemsToShow }) => {
   const [menuData, setMenuData] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [loading, setLoading] = useState(true);
   const [filtering, setFiltering] = useState(false);
   const [categories, setCategories] = useState([]);
+  const [paginationLoading, setPaginationLoading] = useState(false); // Add paginationLoading state
+
 
   useEffect(() => {
     setLoading(true);
@@ -46,6 +49,23 @@ const Menu = ({numberOfItemsToShow}) => {
     ? menuData
     : menuData.filter(item => item.category_id === selectedCategory);
 
+  // pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = menuData.slice(indexOfFirstItem, indexOfLastItem);
+
+  const totalPages = Math.ceil(menuData.length / itemsPerPage);
+
+  const handlePageChange =async (pageNumber) => {
+    setPaginationLoading(true); // Set pagination loading to true
+    await setCurrentPage(pageNumber);
+    setPaginationLoading(false); // Set pagination loading to false after updating page
+
+  };
+
   return (
     <div className='py-5'>
       <h1 className='text-center text-5xl'>Our Menu</h1>
@@ -59,6 +79,7 @@ const Menu = ({numberOfItemsToShow}) => {
               <div className="font-semibold">
                 <li className=''><Link className='btn btn-sm btn-warning btn-outline' onClick={() => handleCategorySelect('All')}>All</Link></li>
               </div>
+              {/* Menu Category */}
               {categories.map(category => (
                 <MenuCategories
                   key={category.id}
@@ -71,14 +92,14 @@ const Menu = ({numberOfItemsToShow}) => {
         </ul>
       </div>
 
-      {loading || filtering ? (
+      {loading || filtering || paginationLoading ? (
         <div className="text-center">
           <span className="loading loading-ball loading-lg"></span>
         </div>
       ) : (
         // Menu Items
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-          {filteredMenuData.slice(0, numberOfItemsToShow).map(menuItem => (
+          {currentItems.map(menuItem => (
             <MenuItems
               key={menuItem.id}
               menuItem={menuItem}
@@ -86,6 +107,16 @@ const Menu = ({numberOfItemsToShow}) => {
           ))}
         </div>
       )}
+
+
+      {/* Pagination */}
+      <div className="flex justify-center mt-4">
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
+      </div>
     </div>
   );
 }
